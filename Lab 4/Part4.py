@@ -12,7 +12,7 @@ driver = webdriver.Chrome(service=service, options=options)
 products=[] #List to store name of the product 
 prices=[] #List to store price of the product 
 ratings=[] #List to store rating of the product 
-driver.get("https://www.flipkart.com/search?q=gaming+laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off")
+driver.get("https://www.flipkart.com/gaming-laptops-store?otracker=nmenu_sub_Electronics_0_Gaming%20Laptops&otracker=nmenu_sub_E")
 
 content = driver.page_source  
 soup = BeautifulSoup(content)  
@@ -22,9 +22,9 @@ for a in soup.findAll('div',attrs={'class':'_37K3-p'}):
      name=a.find('a', attrs={'class':'s1Q9rs'})     
      price=a.find('div',attrs={'class':'_30jeq3'})   
      rating=a.find('div',attrs={'class':'_3LWZlK'})      
-     products.append(name.text)      
-     prices.append(price.text) 
-     ratings.append(rating.text)  
+     products.append(name.text if name else 'N/A')      
+     prices.append(price.text if price else 'N/A') 
+     ratings.append(rating.text if rating else 'N/A')  
   
 df = pd.DataFrame({'Product Name':products,'Price':prices,'Rating':ratings})   
 df.to_csv('products.csv', index=False, encoding='utf-8') 
