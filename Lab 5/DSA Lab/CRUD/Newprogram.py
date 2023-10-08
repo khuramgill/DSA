@@ -127,7 +127,7 @@ class Mainwindow(QMainWindow):
                         updated_data.append(row)
                     
         if student_found is True:
-            fileName = 'C:/Users/monti/A-CRUD/students.csv'
+            fileName = 'D:\3rd Sem\DSA\Lab\Git\Lab 5\DSA Lab\CRUD\students.csv'
             with open('student.csv', "w", encoding="utf-8",newline="") as fileInput:
                 writer = csv.writer(fileInput)
                 writer.writerows(updated_data)
