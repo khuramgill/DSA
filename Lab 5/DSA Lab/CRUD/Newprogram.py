@@ -45,7 +45,7 @@ class Mainwindow(QMainWindow):
     def resetValues(self):
         self.NameEdit.setText("Student Name")
         self.RegEdit.setText("Registration Number")
-        self.gpaEdit.setText("GPA")
+        self.gpaEdit.setText("CGPA")
         self.NumberEdit.setText("Number")
         self.uniEdit.setText("University")
         
