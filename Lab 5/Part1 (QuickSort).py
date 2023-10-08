@@ -15,7 +15,6 @@ def QuickSort(Arry,p,r):
         QuickSort(Arry, p, q -1)
         QuickSort(Arry, p + 1, r)
 
-
 if __name__ == '__main__':
     
     my_list = [3, 6, 8, 10, 1, 2, 1]
