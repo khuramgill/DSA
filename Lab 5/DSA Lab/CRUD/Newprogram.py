@@ -1,4 +1,3 @@
-
 # Basic libraries to import for completing the whole work.
 import sys
 from PyQt5.uic import loadUi
@@ -174,11 +173,12 @@ class Mainwindow(QMainWindow):
                 self.StuInfoTable.setItem(roww, 4 , QtWidgets.QTableWidgetItem((row[4])))
                 roww =+ 1
 # main
+if __name__ == '__main__':
 
-app = QApplication(sys.argv)
-window = Mainwindow()
-window.show()
-sys.exit(app.exec_())
+    app = QApplication(sys.argv)
+    window = Mainwindow()
+    window.show()
+    sys.exit(app.exec_())
 
 
 
