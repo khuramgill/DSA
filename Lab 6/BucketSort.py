@@ -1,12 +1,10 @@
-#-------------------------------------------Bucket Sort-------------------------------------------
-def bucketSort(arr):
+def BucketSort(arr):
     # Create n empty buckets
     n = len(arr)
     buckets = [[] for _ in range(n)]
 
+    # Insert elements into buckets
     for i in range(n):
-        index = int(n * arr[i])
-        buckets[index].append(arr[i])
         index = int(n * arr[i])
         buckets[index].append(arr[i])
 
@@ -32,10 +30,10 @@ def insertionSort(bucket):
     return bucket
 
 if __name__ == '__main__':
-        
-    arr = [0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434] 
-    print(bucketSort(arr))
     
+    arr = [0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434] 
+    print(BucketSort(arr))
+        
     
 '''
 Input: arr[]=[0.897, 0.565, 0.656,0.1234, 0.665, 0.3434]   
