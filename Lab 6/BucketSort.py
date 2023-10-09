@@ -4,7 +4,6 @@ def bucketSort(arr):
     n = len(arr)
     buckets = [[] for _ in range(n)]
 
-    # Insert elements into buckets
     for i in range(n):
         index = int(n * arr[i])
         buckets[index].append(arr[i])
