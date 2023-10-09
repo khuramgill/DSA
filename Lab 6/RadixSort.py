@@ -35,7 +35,8 @@ def radix_sort(input_array):
         exp *= 10
 
 # Example / Test:
-
-input_array = [170, 45, 75, 90, 802, 24, 2, 66]
-radix_sort(input_array)
-print(input_array)
+if __name__ == '__main__':
+        
+    input_array = [170, 45, 75, 90, 802, 24, 2, 66]
+    radix_sort(input_array)
+    print(input_array)
