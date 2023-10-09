@@ -36,6 +36,14 @@ def radix_sort(input_array):
 # Example / Test:
 if __name__ == '__main__':
         
-    input_array = [170, 45, 75, 90, 802, 24, 2, 66]
+    input_array = [110, 45, 65,50, 90,602, 24, 2, 66] 
     radix_sort(input_array)
     print(input_array)
+    
+    
+'''
+Input: arr[] = [110, 45, 65,50, 90,602, 24, 2, 66]   
+ 
+Output: [2,24,45,50,65,66,90,110,602]
+ 
+'''
