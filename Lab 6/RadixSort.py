@@ -20,12 +20,11 @@ def counting_sort_for_radix(input_array, exp):
         count[index % 10] -= 1
         i -= 1
 
-    # Copy the sorted elements back to the original array
     for i in range(n):
         input_array[i] = output[i]
 
 def radix_sort(input_array):
-    # Find the maximum number to determine the number of digits
+
     max_num = max(input_array)
 
     # Perform counting sort for each digit place value
