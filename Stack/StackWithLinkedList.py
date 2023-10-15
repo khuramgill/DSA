@@ -70,4 +70,4 @@ if __name__ == "__main__":
 	for _ in range(1, 6):
 		remove = stack.pop()
 		print(f"Pop: {remove}")
-	print(f"Stack: {stack}")
+	print(f"Stack: {stack}" , "Peek" , stack.peek())
