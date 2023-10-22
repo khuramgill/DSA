@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 22 21:30:16 2023
-
-@author: lenovo
-"""
-
 class Node:
 	def __init__(self, value):
 		self.value = value
@@ -13,9 +6,6 @@ class Node:
 
 class Stack:
 
-	# Initializing a stack.
-	# Use a dummy node, which is
-	# easier for handling edge cases.
 	def __init__(self):
 		self.head = Node("head")
 		self.size = 0
